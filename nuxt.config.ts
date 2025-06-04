@@ -8,9 +8,5 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  modules: ["@nuxt/eslint", "@nuxt/fonts", "@nuxt/icon", "shadcn-nuxt"],
-  shadcn: {
-    prefix: "",
-    componentDir: "./components/ui",
-  },
+  modules: ["@nuxt/eslint", "@nuxt/fonts", "@nuxt/icon"],
 });
