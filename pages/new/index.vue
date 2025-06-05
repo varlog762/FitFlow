@@ -11,30 +11,10 @@ const chest = ref<string>("");
     <div>
       <form>
         <h3 class="text-3xl mb-4">Добавление данных</h3>
-        <input
-          v-model="weight"
-          type="number"
-          placeholder="Вес (кг)"
-          class="text-2xl py-4 px-1 w-full rounded-md border-2 border-gray-400 mb-4"
-        />
-        <input
-          v-model="waist"
-          type="number"
-          placeholder="Талия (см)"
-          class="py-4 px-1 w-full rounded-md border-2 border-gray-400 mb-4"
-        />
-        <input
-          v-model="chest"
-          type="number"
-          placeholder="Грудь (см)"
-          class="py-4 px-1 w-full rounded-md border-2 border-gray-400 mb-4"
-        />
-        <input
-          v-model="hips"
-          type="number"
-          placeholder="Бедра (см)"
-          class="py-4 px-1 w-full rounded-md border-2 border-gray-400 mb-10"
-        />
+        <InputNumber v-model="weight" placeholder="Вес (кг)" />
+        <InputNumber v-model="waist" placeholder="Талия (см)" />
+        <InputNumber v-model="chest" placeholder="Грудь (см)" />
+        <InputNumber v-model="hips" placeholder="Бедра (см)" />
         <button
           type="submit"
           class="bg-green-800 active:bg-green-700 text-white text-2xl text-center rounded-md py-4 w-full"

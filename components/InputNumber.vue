@@ -1,5 +1,8 @@
 <script setup lang="ts">
-const model = defineModel();
+const model = defineModel<string>();
+const { placeholder } = defineProps<{
+  placeholder: string;
+}>();
 </script>
 
 <template>
@@ -7,7 +10,7 @@ const model = defineModel();
     <input
       v-model="model"
       type="number"
-      placeholder="Вес (кг)"
+      :placeholder="placeholder"
       class="text-2xl py-4 px-1 w-full rounded-md border-2 border-gray-400 mb-4"
     />
   </div>
